@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "development": "echo 'Need to read dotenv correctly FIXME' && exit 1",
+    "development": "node-repl index.js",
     "dev": "npm run development",
-    "staging": "heroku surrogate -a mine-relay-staging \"echo '.load boot.js' | node-repl index.js\"",
-    "production": "heroku surrogate -a mine-relay-production \"echo '.load boot.js' | node-repl index.js\"",
+    "staging": "heroku surrogate -a mine-relay-staging node-repl index.js",
+    "production": "heroku surrogate -a mine-relay-production node-repl index.js",
     "prod": "npm run production"
   },
   "author": "parkan",

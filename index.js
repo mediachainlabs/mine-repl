@@ -11,4 +11,3 @@ const knex = Knex(config[node_env]);
 const REDIS_PROVIDER = env.require('REDIS_PROVIDER');
 const REDIS_URL = env.require(REDIS_PROVIDER);
 const redis = Redis.createClient(REDIS_URL);
-
