@@ -1,0 +1,26 @@
+{
+  "name": "mine-repl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "development": "babel-node index.js",
+    "dev": "npm run development",
+    "staging": "heroku surrogate -a mine-relay-staging node-repl index.js",
+    "production": "heroku surrogate -a mine-relay-production node-repl index.js",
+    "prod": "npm run production"
+  },
+  "author": "parkan",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "babel": "^5.8.23",
+    "dotenv": "^1.2.0",
+    "knex": "^0.8.6",
+    "node-repl": "^2.0.2",
+    "pg": "^4.4.3",
+    "redis": "^2.2.5",
+    "require-env": "0.0.4"
+  }
+}
