@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "development": "babel-node index.js",
+    "development": "node-repl index.js",
     "dev": "npm run development",
     "staging": "heroku surrogate -a mine-relay-staging node-repl index.js",
     "production": "heroku surrogate -a mine-relay-production node-repl index.js",
